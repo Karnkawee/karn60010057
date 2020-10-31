@@ -45,17 +45,17 @@
             <div class="col-md-4">
                 <i class="fas fa-address-card fa-3x"></i>
                 <h1>Home</h1>
-                <p>My name is KARNKAWEE PETAIBANLUE. This is a bankbook page.</p>
+                <p>This is a bank page.</p>
             </div>
             <div class="col-md-4">
                 <i class="far fa-address-book fa-3x"></i>
                 <h1>About us</h1>
-                <p>We are the sample of bankbook system.</p>
+                <p>We are</p>
             </div>
             <div class="col-md-4">
                 <i class="far fa-meh fa-3x"></i>
                 <h1>Contact us</h1>
-                <p>Facebook : Karnkawee Petaibanlue</p>
+                <p>i </p>
             </div>
         </div>
     </div>
@@ -66,24 +66,24 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Date</th>
-                <th>Code</th>
-                <th>Withdrawal</th>
-                <th>Deposit</th>
-                <th>Balance</th>
-                <th>StaffID</th>
+                <th>Names</th>
+                <th>Detail</th>
+                <th>Barcode</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Status</th>
 
             </tr>
         </thead>
         <tbody>
             {% for p in products %}
             <tr>
-                <td>{{p.b_date}}</td>
-                <td>{{p.b_code}}</td>
-                <td>{{p.b_withdrawal}}</td>
-                <td>{{p.b_deposit}}</td>
-                <td>{{p.b_balance}}</td>
-                <td>{{p.b_staffid}}</td>
+                <td>{{p.product_name}}</td>
+                <td>{{p.product_detail}}</td>
+                <td>{{p.product_barcode}}</td>
+                <td>{{p.product_qty}}</td>
+                <td>{{p.product_price}}</td>
+                <td>{{p.product_status}}</td>
             </tr>
             {% endfor %}
         </tbody>
