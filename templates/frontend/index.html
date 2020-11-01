@@ -45,17 +45,17 @@
             <div class="col-md-4">
                 <i class="fas fa-address-card fa-3x"></i>
                 <h1>Home</h1>
-                <p>This is a bank page.</p>
+                <p>This is a bankbook page.<br> This page will tell you how much your money left in the bank.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="far fa-star fa-3x"></i>
+                <h1>Reward</h1>
+                <p>There are numbers of (fake) reward. Just withdrawal,composit or transfer your money with our bank.</p>
             </div>
             <div class="col-md-4">
                 <i class="far fa-address-book fa-3x"></i>
                 <h1>About us</h1>
-                <p>We are</p>
-            </div>
-            <div class="col-md-4">
-                <i class="far fa-meh fa-3x"></i>
-                <h1>Contact us</h1>
-                <p>i </p>
+                <p>I am Karnkawee. From KMITL engineering facaulty.<br>Everthing are just example interface idea.<br> Cannot use in the real life</p>
             </div>
         </div>
     </div>
@@ -66,24 +66,26 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Names</th>
-                <th>Detail</th>
-                <th>Barcode</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>Status</th>
+            <!-- ตารางการฝากถอนเงินเข้าธนาคาร -->
+                <th>Date</th>
+                <th>Code</th>
+                <th>Withdrawal</th>
+                <th>Deposit</th>
+                <th>Balance</th>
+                <th>StaffID</th>
 
             </tr>
         </thead>
+        <!--database สำหรับบอกประวัติ-->
         <tbody>
             {% for p in products %}
             <tr>
-                <td>{{p.product_name}}</td>
-                <td>{{p.product_detail}}</td>
-                <td>{{p.product_barcode}}</td>
-                <td>{{p.product_qty}}</td>
-                <td>{{p.product_price}}</td>
-                <td>{{p.product_status}}</td>
+                <td>{{p.product_name}}</td><!--{{p.b_date}} เรียกมาจากmodel.py-->
+                <td>{{p.product_detail}}</td><!--{{p.b_code}}-->
+                <td>{{p.product_barcode}}</td><!--{{p.b_withdrawal}}-->
+                <td>{{p.product_qty}}</td><!--{{p.b_deposit}}-->
+                <td>{{p.product_price}}</td><!--{{p.b_balance}}-->
+                <td>{{p.product_status}}</td><!--{{p.b_staffid}}-->
             </tr>
             {% endfor %}
         </tbody>
@@ -95,10 +97,10 @@
         <div class=" col-sm-4 col-md col-sm-4  col-12 col">
         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
         <!--headin5_amrc-->
-        <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-        <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
-        <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+        <p class="mb10">There are my contact. not from the origin template builder.</p>
+        <p><i class="fa fa-location-arrow"></i> 232/32 Asawapichet Rd. Talingchan district. Bangkok 10170 Thailand</p>
+        <p><i class="fa fa-phone"></i>  +66-1039009  </p>
+        <p><i class="fa fa fa-envelope"></i> karnkawee@gmail.com or 60010057@kmitl.ac.th  </p>
         
         
         </div>
@@ -134,16 +136,16 @@
         </div>
         
         
-        <div class=" col-sm-4 col-md  col-12 col">
+        <!-- <div class=" col-sm-4 col-md  col-12 col">
         <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-        <!--headin5_amrc ends here-->
+        headin5_amrc ends here
         
         <ul class="footer_ul2_amrc">
         <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
         <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
         <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
         </ul>
-        <!--footer_ul2_amrc ends here-->
+        footer_ul2_amrc ends here-->
         </div>
         </div>
         </div>
@@ -159,7 +161,7 @@
         <li><a href="http://webenlance.com">Contact</a></li>
         </ul>
         <!--foote_bottom_ul_amrc ends here-->
-        <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+        <p class="text-center">Copyright @2017 | Designed With by <a href="#">Karnkawee</a></p>
         
         <ul class="social_footer_ul">
         <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
